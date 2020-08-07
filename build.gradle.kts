@@ -24,4 +24,5 @@ val String.v: String get() = rootProject.extra["$this.version"] as String
 
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-nodejs:${"kotlinx-nodejs".v}")
+    implementation(npm("@actions/glob", "0.1.0", generateExternals = true))
 }
